@@ -1,0 +1,26 @@
+<div class="container">
+    <form name="modifyflightform" (ngSubmit)="onUpdate()">
+        <table align="center">
+            <caption>{{ title | uppercase }}</caption>
+            <br>
+            <br>
+                <tbody>
+                    <tr>
+                        <th>Provider Code ::</th>
+                        <td><input type="text" name="proviercode" [(ngModel)]="ufobj.providerCode" placeholder="6E- or SG- or I5- or G8- or 9W- or AI-"/></td>
+                    </tr>
+                    <br>
+                    <tr>
+                        <th>Provider Type ::</th>
+                        <td><input type="text" name="providertype" [(ngModel)]="ufobj.providerType" placeholder="Domestic or International"/></td>
+                    </tr>
+                    <br>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td><button type="submit" >Update Flight</button></td>
+                    </tr>
+                </tfoot>
+        </table>
+    </form>
+    </div>

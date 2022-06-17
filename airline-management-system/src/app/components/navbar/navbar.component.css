@@ -1,0 +1,18 @@
+
+.navbar {
+    background-color: powderblue;
+    height: 100px;
+}
+.navbar-span {
+    padding-top: 30px;
+    padding-left: 30px;
+   
+}
+span {
+    padding-right: 30px;
+    font-size: x-large;
+    color: orangered;
+    font-style: italic;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}

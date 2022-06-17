@@ -1,0 +1,33 @@
+
+<div class="container">
+<form name="createflightform" (ngSubmit)="onInsert()">
+    <table align="center">
+        <caption>{{ title | uppercase }}</caption>
+        <br>
+        <br>
+            <tbody>
+                <tr>
+                    <th>Provider Name</th>
+                    <td><input type="text" name="providername" [(ngModel)]="cfobj.providerName" (keydown)="getCode()" pattern="[A-Za-z]{10}" title="Hi !!" /></td>
+                </tr>
+                <br>
+                <tr>
+                    <th>Provider Code</th>
+                    <td><input type="text" name="proviercode" [ngModel]="cfobj.providerCode" readonly/></td>
+                </tr>
+                <br>
+                <tr>
+                    <th>Provider Type</th>
+                    <td><input type="text" name="providertype" [(ngModel)]="cfobj.providerType" placeholder="Domestic or International" /></td>
+                </tr>
+                <br>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td><button type="submit" >Insert Flight</button></td>
+                    <td><input type="reset" /></td>
+                </tr>
+            </tfoot>
+    </table>
+</form>
+</div>

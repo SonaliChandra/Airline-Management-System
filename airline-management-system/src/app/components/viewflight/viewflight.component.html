@@ -1,0 +1,23 @@
+  
+<form name="viewflightsform" (ngSubmit)="onView()">  
+  <div class="container">
+    <label>Filter by Provider Type :: </label>
+    <input type="text" name="providerType" [(ngModel)]="vfobj.providerType" placeholder="Domestic or International"/>
+    <input type="submit" value="Find" />
+  </div>
+</form>
+<br>
+<br>
+<table align="center">
+  <caption>View AirLine Providers Information</caption>
+  <tr>
+    <th>Provider Name</th>
+    <th>Provider Code</th>
+    <th>Provider Type</th>
+  </tr>
+  <tr *ngFor="let x of arr" >
+    <td>{{ x.providerName }}</td>
+    <td>{{ x.providerCode }}</td>
+    <td>{{ x.providerType }}</td>
+  </tr>
+</table>

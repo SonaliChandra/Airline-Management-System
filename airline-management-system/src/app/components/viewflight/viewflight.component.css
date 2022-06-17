@@ -1,0 +1,12 @@
+.container {
+    text-align: center;
+    background-color: skyblue;
+    width: 100px;
+    height: 80px;
+    padding-top: 40px;
+}
+table {
+    border: 2px solid springgreen;
+    width: 50%;
+    padding-top: 30px;
+}
